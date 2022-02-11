@@ -29,7 +29,7 @@ phases:
   post_build:
     commands:
       # Use Post-Build for notifications, git tags, upload artifacts to S3
-      - sam package --output-template-file packaged.yaml --s3-bucket $PACKAGE_BUCKET --s3-prefix sam-cli
+      - sam package --output-template-file packaged.yaml --s3-bucket sam-app-github-cicd-artifactsbucket2aac5544-2ak61ciy4by5 --s3-prefix sam-cli
 
 artifacts:
   discard-paths: yes

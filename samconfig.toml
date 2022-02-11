@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "sam-app-github"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-r5bxavzzqos1"
+s3_prefix = "sam-app-github"
+region = "us-east-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
